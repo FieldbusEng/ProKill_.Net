@@ -1,0 +1,7 @@
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\obj\Debug\ProKill_.Net.csproj.CoreCompileInputs.cache
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\bin\Debug\ProKill_.Net.exe.config
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\bin\Debug\ProKill_.Net.exe
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\bin\Debug\ProKill_.Net.pdb
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\obj\Debug\ProKill_.Net.exe
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\obj\Debug\ProKill_.Net.pdb
+C:\Users\pk\source\repos\ProKill_.Net\ProKill_.Net\obj\Debug\ProKill_.Net.csprojAssemblyReference.cache
