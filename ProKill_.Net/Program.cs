@@ -24,7 +24,7 @@ namespace ProKill_.Net
 
             Processes instProc = new Processes();
 
-             result = instProc.IfProcExist(inputName);
+             int result = instProc.IfProcExist(inputName);
 
 
             Console.ReadKey();
