@@ -1,33 +1,71 @@
 ﻿using System;
 
-
 namespace ProKill_.Net
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //[0] Proc Name, [1] TimeAllowed, [2] Scan Freq
-            if (string.IsNullOrEmpty(args[0]) || string.IsNullOrEmpty(args[1]) || string.IsNullOrEmpty(args[2]))
-            {
-                Console.WriteLine("Not correct input");
-                Environment.Exit(0);
-            }
-            string inputName = args[0];
-            int timeAllowed = Convert.ToInt32(args[1]);
-            int timeFreq = Convert.ToInt32(args[2]);
+            Logger log = new Logger();
+            // clear logs
+            log.methodDelete();
+            log.methodDeleteOfficial();
 
-            Console.WriteLine("App Process Care");
-            Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine("");
-            Console.WriteLine("You looking for process Name: {0} it will be closed in: {1} " + inputName, timeAllowed);
+            CheckClass inputC = new CheckClass();
+            var input = inputC.methodCheck(args);
+            string inputName = input.Item1;
+            int timeAllowed = Convert.ToInt32(input.Item2);
+            int timeFreq = Convert.ToInt32(input.Item3);
+
 
             Processes instProc = new Processes();
+            int result = instProc.IfProcExist(inputName, timeAllowed);
 
-             int result = instProc.IfProcExist(inputName);
+            switch (result)
+            {
+                case 0:
+                    log.methodLoggerOfficial("Program Finished Successfully");
+                    Environment.Exit(0);
+                    break;
+                
+                case 1:
+                    TimerC timerClass = new TimerC();
+                    timerClass.TimerSet(inputName, timeAllowed, timeFreq);
+                    break;
+                case 2:
+                    log.methodLoggerOfficial("Program Finished Successfully");
+                    Environment.Exit(0);
+                    break;
+                case 3:
+                    TimerC timerClass1 = new TimerC();
+                    timerClass1.TimerSet(inputName, timeAllowed, timeFreq);
+                    break;
+                case 4:
+                    log.methodLoggerOfficial("Program Finished with Error");
+                    Environment.Exit(0);
+                    break;
+                case 5:
+                default:
+                    log.methodLoggerOfficial("Program Finished with Exception");
+                    Environment.Exit(0);
+                    break;
+                    
 
+            }
+            while (true)
+            {
+                string stop = Console.ReadLine();
+                if (stop == "exit")
+                {
+                    Environment.Exit(0);
+                }
+            }
+            
 
-            Console.ReadKey();
         }
+        
     }
+   
+
+    
 }
