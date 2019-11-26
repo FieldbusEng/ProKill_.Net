@@ -59,6 +59,10 @@ namespace ProKill_.Net
                 {
                     Environment.Exit(0);
                 }
+                else
+                {
+                    Console.WriteLine("Waiting for next scan");
+                }
             }
             
 

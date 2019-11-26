@@ -55,7 +55,7 @@ namespace ProKill_.Net
 
                 if (countKilled > 0 && countNotKilled == 0)
                 {
-                    string message = "process " + processName + " - was found and killed Totally" + countKilled.ToString() + " times";
+                    string message = "process " + processName + " - was found and killed Totally: " + countKilled.ToString() + " times";
                     llogg.methodLoggerOfficial(message);
                     Console.WriteLine(message);
                     return 0;
