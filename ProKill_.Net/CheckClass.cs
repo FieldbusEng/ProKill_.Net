@@ -10,6 +10,11 @@ namespace ProKill_.Net
         {
             Console.WriteLine("Please type correct: [string Process Name] [int Time Allowed(minutes)] [int Scan Time(minutes)]");
             string input = Console.ReadLine();
+            if (input == "exit")
+            {
+                Environment.Exit(0);
+            }
+            
             String[] inputSplit = input.Split(new Char[] { ' ', ',', '.', ':', '\t' });
             return inputSplit;
         }

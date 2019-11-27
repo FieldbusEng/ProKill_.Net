@@ -62,7 +62,7 @@ namespace ProKill_.Net
                 }
                 else if (countKilled > 0 && countNotKilled > 0)
                 {
-                    string message = "process " + processName + "was found and killed " + countKilled.ToString() + " times, But some processs not killed because time not elapsed";
+                    string message = "process " + processName + " was found and killed " + countKilled.ToString() + " times, But some processs not killed because time not elapsed";
                     llogg.methodLoggerOfficial(message);
                     Console.WriteLine(message);
                     return 1;

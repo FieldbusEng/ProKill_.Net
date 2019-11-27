@@ -1,9 +1,0 @@
-26-Nov-19 6:47:13 PM  process notepad just found and killed 
-26-Nov-19 6:47:13 PM  process notepad just found and killed 
-26-Nov-19 6:47:13 PM  process notepadwas found and killed 2 times, But some processs not killed because time not elapsed
-26-Nov-19 6:47:13 PM  notepad - found - Time not elapsed
-26-Nov-19 6:47:13 PM  result from scan #2
-26-Nov-19 6:48:13 PM  process notepad just found and killed 
-26-Nov-19 6:48:13 PM  process notepad just found and killed 
-26-Nov-19 6:48:13 PM  process notepadwas found and killed 2 times, But some processs not killed because time not elapsed
-26-Nov-19 6:48:13 PM  result from scan #3
